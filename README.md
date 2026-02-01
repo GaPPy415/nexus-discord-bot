@@ -1,22 +1,16 @@
 # Nexus Discord Bot
 
-A simple Discord bot using the Sapphire Framework with a ping command.
+A Discord bot built with [Sapphire Framework](https://www.sapphirejs.dev/).
 
 ## Setup
 
-1. Install dependencies:
-   ```sh
-   npm install
-   ```
-2. Add your Discord bot token to a `.env` file:
-   ```env
-   TOKEN=your-bot-token-here
-   ```
-3. Run the bot:
-   ```sh
-   npm run start
-   ```
+1. Install dependencies: `npm install`
+2. Create `.env` with `TOKEN`
+3. Initialize database: `npx drizzle-kit push`
+4. Run: `npm run dev`
 
 ## Commands
 
-- `/ping`: Replies with `Pong!`
+- `/ping` - Replies with Pong!
+- `/reminder create message:"..." when:"in 2 hours"` - Create a reminder
+- `/reminder list` - List your reminders
