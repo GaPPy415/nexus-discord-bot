@@ -15,4 +15,4 @@ const client = new SapphireClient({
   },
 });
 
-void client.login(process.env['DISCORD_TOKEN']);
+void client.login(process.env['TOKEN']);
