@@ -1,5 +1,5 @@
 import { LogLevel, SapphireClient } from '@sapphire/framework';
-import { GatewayIntentBits } from 'discord.js';
+import { Events, GatewayIntentBits } from 'discord.js';
 import { config } from 'dotenv';
 
 import { logger } from './logger/index.js';
@@ -13,7 +13,7 @@ const client = new SapphireClient({
   },
 });
 
-client.once('ready', () => {
+client.once(Events.ClientReady, () => {
   logger.info(`✅ Bot logged in as ${client.user?.tag}`);
 });
 
