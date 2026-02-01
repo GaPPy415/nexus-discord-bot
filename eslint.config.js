@@ -17,6 +17,7 @@ export default [
   perfectionist,
   {
     rules: {
+      'class-methods-use-this': 'off',
       'no-restricted-imports': [
         'error',
         {

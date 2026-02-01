@@ -11,7 +11,6 @@ export class PingCommand extends Command {
     });
   }
 
-  // eslint-disable-next-line class-methods-use-this
   override async chatInputRun(interaction: CommandInteraction) {
     await interaction.reply('Pong!');
   }
