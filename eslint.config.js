@@ -18,6 +18,7 @@ export default [
   {
     rules: {
       'class-methods-use-this': 'off',
+      'max-nested-callbacks': 'off',
       'no-restricted-imports': [
         'error',
         {
